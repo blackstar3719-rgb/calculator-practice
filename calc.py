@@ -1,8 +1,8 @@
 def add(a, b):
-    return a - b
+    return a + b
 
 def subtract(a, b):
-    return a + b
+    return a - b
 
 def multiply(a, b):
     return a * b
@@ -29,6 +29,9 @@ def main():
         print("Результат:", multiply(a, b))
     elif op == '/':
         print("Результат:", divide(a, b))
+        if b==0 and op=="/":
+        print("На ноль делить нельзя")
+        return
     else:
         print("Неизвестная операция")
 
